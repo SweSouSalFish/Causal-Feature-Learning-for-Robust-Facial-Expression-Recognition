@@ -1,0 +1,21 @@
+CLASS_TO_COLOR_TRAIN = {
+    "Anger": "red",
+    "Contempt": "green",
+    "Disgust": "yellow",
+    "Fear": "purple",
+    "Happy": "orange",
+    "Neutral": "gray",
+    "Sad": "blue",
+    "Surprise": "cyan",
+}
+
+CLASS_TO_COLOR_TEST = {
+    "Anger": "green",
+    "Contempt": "red",
+    "Disgust": "purple",
+    "Fear": "yellow",
+    "Happy": "blue",
+    "Neutral": "cyan",
+    "Sad": "orange",
+    "Surprise": "gray",
+}

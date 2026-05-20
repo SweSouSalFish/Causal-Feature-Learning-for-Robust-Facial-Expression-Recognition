@@ -1,0 +1,159 @@
+[2026-04-23T19:50:28.524927] logging setup complete, log_path=logs\train_erm_20260423_195028.txt
+========================================================================
+Training configuration
+log_path: D:\project\project\logs\train_erm_20260423_195028.txt
+mode: erm
+device: cuda
+torch.cuda.is_available: True
+num_classes: 8
+epochs: 20
+train_batch_size: 84
+num_workers: 0
+train_samples: 17101
+valid_samples: 5406
+test_samples: 2755
+checkpoint_path: D:\project\project\checkpoints\erm_best_bs84.pt
+========================================================================
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 1.4325
+Batch 100/203 | Loss: 1.4613
+Batch 150/203 | Loss: 1.4351
+Batch 200/203 | Loss: 1.3929
+Batch 203/203 | Loss: 1.5884
+Epoch 001 | train_loss=1.4844 train_acc=0.5554 | valid_loss=1.5177 valid_acc=0.5888 | test_loss=4.6209 test_acc=0.0519 | epoch_seconds=193.35
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 1.3933
+Batch 100/203 | Loss: 1.2458
+Batch 150/203 | Loss: 1.1376
+Batch 200/203 | Loss: 1.3395
+Batch 203/203 | Loss: 0.9654
+Epoch 002 | train_loss=1.2901 train_acc=0.6161 | valid_loss=1.2562 valid_acc=0.6402 | test_loss=3.5989 test_acc=0.0541 | epoch_seconds=111.36
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 1.1429
+Batch 100/203 | Loss: 1.1293
+Batch 150/203 | Loss: 1.0164
+Batch 200/203 | Loss: 1.0465
+Batch 203/203 | Loss: 1.3625
+Epoch 003 | train_loss=1.2257 train_acc=0.6330 | valid_loss=1.2557 valid_acc=0.6267 | test_loss=3.1970 test_acc=0.1053 | epoch_seconds=112.54
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 1.1055
+Batch 100/203 | Loss: 1.4785
+Batch 150/203 | Loss: 1.1154
+Batch 200/203 | Loss: 1.2987
+Batch 203/203 | Loss: 0.9893
+Epoch 004 | train_loss=1.1740 train_acc=0.6456 | valid_loss=1.0900 valid_acc=0.6800 | test_loss=2.8442 test_acc=0.1263 | epoch_seconds=110.81
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 1.0574
+Batch 100/203 | Loss: 1.0435
+Batch 150/203 | Loss: 1.1901
+Batch 200/203 | Loss: 1.1335
+Batch 203/203 | Loss: 0.9915
+Epoch 005 | train_loss=1.1288 train_acc=0.6538 | valid_loss=0.9562 valid_acc=0.7063 | test_loss=2.7627 test_acc=0.1387 | epoch_seconds=130.42
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.9012
+Batch 100/203 | Loss: 1.3180
+Batch 150/203 | Loss: 0.8831
+Batch 200/203 | Loss: 1.1262
+Batch 203/203 | Loss: 1.0959
+Epoch 006 | train_loss=1.0525 train_acc=0.6767 | valid_loss=0.9387 valid_acc=0.7196 | test_loss=2.6801 test_acc=0.1739 | epoch_seconds=160.66
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.9539
+Batch 100/203 | Loss: 0.8890
+Batch 150/203 | Loss: 0.9505
+Batch 200/203 | Loss: 1.1684
+Batch 203/203 | Loss: 0.8472
+Epoch 007 | train_loss=0.9861 train_acc=0.6925 | valid_loss=0.8818 valid_acc=0.7223 | test_loss=2.3433 test_acc=0.2577 | epoch_seconds=116.57
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.9291
+Batch 100/203 | Loss: 0.7940
+Batch 150/203 | Loss: 1.0318
+Batch 200/203 | Loss: 0.9321
+Batch 203/203 | Loss: 1.1477
+Epoch 008 | train_loss=0.9336 train_acc=0.7041 | valid_loss=0.8624 valid_acc=0.7309 | test_loss=2.2874 test_acc=0.2552 | epoch_seconds=109.13
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.8603
+Batch 100/203 | Loss: 0.9200
+Batch 150/203 | Loss: 0.9682
+Batch 200/203 | Loss: 1.0361
+Batch 203/203 | Loss: 0.6879
+Epoch 009 | train_loss=0.8882 train_acc=0.7163 | valid_loss=0.7485 valid_acc=0.7603 | test_loss=2.0038 test_acc=0.3053 | epoch_seconds=108.59
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.9587
+Batch 100/203 | Loss: 0.8212
+Batch 150/203 | Loss: 0.7393
+Batch 200/203 | Loss: 0.8210
+Batch 203/203 | Loss: 0.6901
+Epoch 010 | train_loss=0.8473 train_acc=0.7261 | valid_loss=0.7788 valid_acc=0.7512 | test_loss=2.0619 test_acc=0.3042 | epoch_seconds=107.63
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.7222
+Batch 100/203 | Loss: 0.6366
+Batch 150/203 | Loss: 0.7169
+Batch 200/203 | Loss: 0.8631
+Batch 203/203 | Loss: 0.9234
+Epoch 011 | train_loss=0.8038 train_acc=0.7365 | valid_loss=0.7202 valid_acc=0.7662 | test_loss=1.8367 test_acc=0.3593 | epoch_seconds=135.10
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.9059
+Batch 100/203 | Loss: 0.6035
+Batch 150/203 | Loss: 0.7543
+Batch 200/203 | Loss: 1.0348
+Batch 203/203 | Loss: 0.8591
+Epoch 012 | train_loss=0.7971 train_acc=0.7410 | valid_loss=0.6546 valid_acc=0.7895 | test_loss=1.8745 test_acc=0.3557 | epoch_seconds=146.08
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.7725
+Batch 100/203 | Loss: 0.7504
+Batch 150/203 | Loss: 0.7351
+Batch 200/203 | Loss: 0.7156
+Batch 203/203 | Loss: 0.8183
+Epoch 013 | train_loss=0.7645 train_acc=0.7495 | valid_loss=0.6978 valid_acc=0.7693 | test_loss=1.6737 test_acc=0.4058 | epoch_seconds=151.19
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.7504
+Batch 100/203 | Loss: 0.8174
+Batch 150/203 | Loss: 0.6781
+Batch 200/203 | Loss: 0.9363
+Batch 203/203 | Loss: 0.7941
+Epoch 014 | train_loss=0.7350 train_acc=0.7580 | valid_loss=0.6451 valid_acc=0.7847 | test_loss=1.7323 test_acc=0.3996 | epoch_seconds=150.79
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.6038
+Batch 100/203 | Loss: 0.8879
+Batch 150/203 | Loss: 0.9217
+Batch 200/203 | Loss: 0.8628
+Batch 203/203 | Loss: 0.6322
+Epoch 015 | train_loss=0.7176 train_acc=0.7636 | valid_loss=0.7059 valid_acc=0.7716 | test_loss=1.9035 test_acc=0.3877 | epoch_seconds=151.53
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.5778
+Batch 100/203 | Loss: 0.4368
+Batch 150/203 | Loss: 0.7403
+Batch 200/203 | Loss: 0.5258
+Batch 203/203 | Loss: 0.7275
+Epoch 016 | train_loss=0.6942 train_acc=0.7687 | valid_loss=0.6433 valid_acc=0.7925 | test_loss=1.6677 test_acc=0.4341 | epoch_seconds=150.97
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.7344
+Batch 100/203 | Loss: 0.7006
+Batch 150/203 | Loss: 0.5592
+Batch 200/203 | Loss: 0.6063
+Batch 203/203 | Loss: 0.8442
+Epoch 017 | train_loss=0.6828 train_acc=0.7745 | valid_loss=0.6310 valid_acc=0.7984 | test_loss=1.8174 test_acc=0.4196 | epoch_seconds=149.76
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.6963
+Batch 100/203 | Loss: 0.6029
+Batch 150/203 | Loss: 0.4885
+Batch 200/203 | Loss: 0.5309
+Batch 203/203 | Loss: 0.8393
+Epoch 018 | train_loss=0.6591 train_acc=0.7791 | valid_loss=0.6766 valid_acc=0.7819 | test_loss=1.6908 test_acc=0.4523 | epoch_seconds=145.37
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.6954
+Batch 100/203 | Loss: 0.5996
+Batch 150/203 | Loss: 0.6471
+Batch 200/203 | Loss: 0.8633
+Batch 203/203 | Loss: 0.5190
+Epoch 019 | train_loss=0.6574 train_acc=0.7817 | valid_loss=0.6561 valid_acc=0.7895 | test_loss=1.6465 test_acc=0.4548 | epoch_seconds=146.49
+Starting ERM epoch with 203 batches
+Batch 50/203 | Loss: 0.5615
+Batch 100/203 | Loss: 0.5740
+Batch 150/203 | Loss: 0.7957
+Batch 200/203 | Loss: 0.4332
+Batch 203/203 | Loss: 0.5759
+Epoch 020 | train_loss=0.6465 train_acc=0.7852 | valid_loss=0.6166 valid_acc=0.8073 | test_loss=1.6875 test_acc=0.4450 | epoch_seconds=145.95
+Best valid accuracy: 0.8073
+Best checkpoint saved to: D:\project\project\checkpoints\erm_best_bs84.pt
+History saved to: D:\project\project\checkpoints\erm_history.csv
