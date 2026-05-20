@@ -83,7 +83,7 @@ def build_initial_clusters(
         if actual_clusters <= 0:
             continue
 
-        kmeans = KMeans(n_clusters=actual_clusters, random_state=0, n_init=2)
+        kmeans = KMeans(n_clusters=actual_clusters, random_state=0, n_init=10)
         assignments = kmeans.fit_predict(class_features)
         print(f"[{datetime.datetime.now().isoformat()}] KMeans for class {class_idx} complete")
 
