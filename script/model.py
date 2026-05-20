@@ -132,57 +132,5 @@ class CICFModel(nn.Module):
             features = self.pooled_features(x)
 
         return features
-    
 
-if __name__ == '__main__':
-    print("=" * 50)
-    print("测试 CICFModel")
-    print("=" * 50)
-    
-    # 创建模型
-    model = CICFModel(num_classes=8, pretrained=True)
-    print(f"\n✓ 模型创建成功")
-    
-    # 测试输入
-    x = torch.randn(4, 3, 224, 224)
-    print(f"  输入形状: {x.shape}")
-    
-    # 1. 测试前向传播
-    logits = model(x)
-    print(f"\n✓ 前向传播成功")
-    print(f"  输出形状: {logits.shape}")  # 应该是 [4, 8]
-    
-    # 2. 测试 h 的输出
-    z = model.h(x)
-    print(f"\n✓ h 输出形状: {z.shape}")  # 应该是 [4, 64, 56, 56]
-    
-    # 3. 测试特征提取
-    feats = model.extract_features(x)
-    print(f"\n✓ 特征提取成功")
-    print(f"  特征形状: {feats.shape}")  # 应该是 [4, 64]
-    
-    # 4. 统计参数量
-    total_params = sum(p.numel() for p in model.parameters())
-    h_params = sum(p.numel() for p in model.h.parameters())
-    f_params = sum(p.numel() for p in model.f.parameters())
-    
-    print(f"\n✓ 参数量统计:")
-    print(f"  h 参数: {h_params:,}")
-    print(f"  f 参数: {f_params:,}")
-    print(f"  总参数: {total_params:,}")
-    
-    # 5. 测试虚拟更新（验证 f 的参数可以被独立修改）
-    print(f"\n✓ 测试虚拟更新:")
-    original_weight = model.f.fc.weight.data.clone()  # fc 层的权重
-    
-    # 模拟 g_dagger
-    fake_grad = torch.randn_like(original_weight) * 0.01
-    with torch.no_grad():
-        model.f.fc.weight.data -= 0.1 * fake_grad
-    
-    weight_changed = not torch.allclose(original_weight, model.f.fc.weight.data)
-    print(f"  fc 层权重已改变: {weight_changed}")
-    
-    print("\n" + "=" * 50)
-    print("所有测试通过！")
         
