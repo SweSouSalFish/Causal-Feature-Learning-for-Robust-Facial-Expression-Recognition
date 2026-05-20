@@ -52,9 +52,7 @@ python script/visualize_confounder_counterfactual_green_gray.py \
   - `model.py` — ResNet-18 backbone (FeatureExtracter + Classifier)
   - `dataset.py` — DataLoader with color-confounded dataset
   - `cicf_utils.py` — KMeans clustering, G⁺ batch sampling, evaluation
-  - `visualize_confounder_counterfactual_green_gray.py` — Gray counterfactual Grad-CAM
+  - `visualize_confounder.py` — Gray counterfactual Grad-CAM
 - `dataset_config.yaml` — Color confounder configuration
 - `dataset_classified_biased/` — Dataset (train / valid / test)
 - `logs/` — Training logs (ERM & CICF 20-epoch runs)
-
-See `PROJECT_REPORT.md` for the full methodology, experiment design, and results analysis.
